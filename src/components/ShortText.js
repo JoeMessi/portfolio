@@ -1,0 +1,26 @@
+import React from 'react';
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
+
+
+const ShortText = () => {
+  return (
+    <Container fluid>
+      <Row>
+        <Col></Col>
+        <Col xs={10} sm={10} md={10} lg={8}>
+          <Jumbotron fluid className="jumbos">
+            <Container>
+              <p className="para">
+               Lorem ipsum is placeholder text commonly used in the graphic,
+               print, and publishing industries for previewing layouts and visual mockups.
+              </p>
+            </Container>
+            </Jumbotron>
+        </Col>
+        <Col></Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default ShortText;
