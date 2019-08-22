@@ -15,7 +15,13 @@ const WorksWorker = (props) => {
             <Col>
               <Jumbotron className="jumbos">
                 <h2 className="headings-works">As a worker</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p>
+                I've worked for 2 years at a digital marketing company called Luxus.
+                My main job was to create web pages using the famous content management system
+                developed by Adobe: "Adobe Experience Manager" or AEM.
+                The latest project I worked on at Luxus before I left was the development of the new
+                site for Amadeus, have a look at two of the many pages I helped creating using AEM.
+                </p>
               </Jumbotron>
             </Col>
           </Row>
@@ -27,14 +33,14 @@ const WorksWorker = (props) => {
               <Row>
                 <Col md className="col-works-luxus">
                    <a href="#">
-                     <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/public_api_request_1.png`}} className="jumbo-works">
+                     <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/amadeus.png`}} className="jumbo-works">
                        <h5 className="text-jumbo-works">View page</h5>
                      </Jumbotron>
                    </a>
                 </Col>
                 <Col md className="col-works-luxus">
                    <a href="#">
-                     <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/public_api_request_2.png`}} className="jumbo-works">
+                     <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/amadeus2.png`}} className="jumbo-works">
                        <h5 className="text-jumbo-works">View page</h5>
                      </Jumbotron>
                    </a>

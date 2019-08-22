@@ -8,11 +8,10 @@ const ShortText = () => {
       <Row>
         <Col></Col>
         <Col xs={10} sm={10} md={10} lg={8}>
-          <Jumbotron fluid className="jumbos">
+          <Jumbotron fluid id="jumbo-shrt-txt1" className="jumbos">
             <Container>
-              <p className="para">
-               Lorem ipsum is placeholder text commonly used in the graphic,
-               print, and publishing industries for previewing layouts and visual mockups.
+              <p id="para-shrt-txt1">
+                 I love JavaScript and everything that comes with it. 
               </p>
             </Container>
             </Jumbotron>

@@ -17,7 +17,7 @@ const WorksStudent = (props) => {
   );
 
   return (
-    <Container fluid id="container-works-gallery-student" ref={props.studentRef}>
+    <Container fluid id="anchor-student" className="container-grey-bg" ref={props.studentRef}>
       <Row className="padding-row-works">
         <Col></Col>
         <Col xs={10}>
@@ -25,7 +25,10 @@ const WorksStudent = (props) => {
             <Col>
               <Jumbotron className="jumbos">
                 <h2 className="headings-works">As a student</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p>
+                   I studied at <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a> and I loved it.
+                   I completed the Full Stack JavaScript Techdegree program
+                   and these are the projects I made during my studying.</p>
               </Jumbotron>
             </Col>
           </Row>

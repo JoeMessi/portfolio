@@ -10,7 +10,7 @@ const AnotherShortText = () => {
         <Col xs={10} sm={10} md={10} lg={8}>
           <Jumbotron fluid className="jumbos">
             <Container>
-              <p className="para">
+              <p id="para-shrt-txt2">
                Lorem ipsum is placeholder text commonly used in the graphic,
                print, and publishing industries for previewing layouts and visual mockups.
               </p>

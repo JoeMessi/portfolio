@@ -21,7 +21,7 @@ const WorkDetails = (props) => {
          <Col></Col>
            <Col xs={12} sm={12} md={7} lg={7}>
              <Jumbotron fluid className="jumbos-hero-work-details">
-             <Button href="/" variant="outline-dark" size="sm">Back</Button>
+             <Button href="/#anchor-student" variant="outline-dark" size="sm">Back</Button>
                <h2>{project.project_name}</h2>
                <p>{project.description}</p>
              </Jumbotron>

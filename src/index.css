@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #343a40;
 }
 
 code {
@@ -17,7 +18,16 @@ ul {
 }
 
 a {
+  color: #f99a00;
   text-decoration: none !important;
+}
+
+a:hover {
+  color: #f99a00;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 button:focus {
@@ -32,6 +42,7 @@ button:focus {
 }
 
 .header-bg {
+  height: 100vh;
   background: #343a40;
   padding-top: 5rem;
   color: #ffffffbf;
@@ -81,8 +92,20 @@ button:focus {
   font-size: 1.6rem;
 }
 
-.para {
-  font-size: 1.5rem;
+#para-shrt-txt1 {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #343a40d9;
+}
+
+#para-shrt-txt2 {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #ffffffa3;
+}
+
+#jumbo-shrt-txt1 {
+  padding: 4.5rem 0 3rem 0;
 }
 
 .col-works-grid {
@@ -106,7 +129,7 @@ button:focus {
   padding: 0 12px 20px 12px;
 }
 
-.col-works-grid h5, .col-works-luxus h5  {
+.col-works-grid h5, .col-works-luxus h5, .col-personal-works-grid h5  {
   font-weight: 900;
 }
 
@@ -114,42 +137,43 @@ button:focus {
   height: auto;
   border-radius: 50%;
   position: relative;
+  border: 1px solid #0000002e;
 }
 
 #skills-c1 {
-  width: 100%;
-  padding-top: 100%;
-  background: rgba(220, 53, 69, 0.9);
+  width: 90%;
+  padding-top: 90%;
+  background: #343a40;
 }
 
 #skills-c2 {
-  width: 60%;
-  padding-top: 60%;
+  width: 65%;
+  padding-top: 65%;
   background: #343a40;
 }
 
 #skills-c3 {
   width: 100%;
   padding-top: 100%;
-  background: #6c63ff;
+  background: #343a40;
 }
 
 #skills-c4 {
-  width: 55%;
-  padding-top: 55%;
-  background: #ffa500c9;
+  width: 70%;
+  padding-top: 70%;
+  background: #343a40;
 }
 
 #skills-c5 {
   width: 70%;
   padding-top: 70%;
-  background: rgba(220, 53, 69, 0.9);
+  background: #343a40;
 }
 
 #skills-c6 {
-  width: 70%;
-  padding-top: 70%;
-  background: #ffa500c9;
+  width: 80%;
+  padding-top: 80%;
+  background: #343a40;
 }
 
 #skills-c7 {
@@ -161,16 +185,14 @@ button:focus {
 #skills-c8 {
   width: 65%;
   padding-top: 65%;
-  background: rgba(220, 53, 69, 0.9);
+  background: #343a40;
 }
 
 #skills-c9 {
   width: 70%;
   padding-top: 70%;
-  background: #6c63ff;
+  background: #343a40;
 }
-
-
 
 #skills-row-1 {
   margin-top: 3rem;
@@ -181,7 +203,14 @@ button:focus {
   margin-bottom: 3rem;
 }
 
+#jumbo-skills-heading {
+  padding: 4rem 0 0 0;
+}
+
 .text-skill-circle {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
   position: absolute;
   float: left;
   top: 50%;
@@ -204,7 +233,7 @@ button:focus {
 
 }
 
-#container-works-gallery-student {
+.container-grey-bg {
   background: #f6f6f6bf;
 }
 
@@ -238,11 +267,14 @@ button:focus {
 
 .headings-works {
   font-size: 2.4rem;
+  font-weight: 700;
+  color: #5b5a5a;
+  margin-bottom: 2rem;
 }
 
 .container-dark {
-  background: #343a40;
-  color: #ffffffa3;
+  background: #343a40 !important;
+  color: #ffffffa3 !important;
 }
 
 #row-another-txt {
@@ -343,6 +375,10 @@ button:focus {
   padding-top: 2rem;
 }
 
+#about-heading {
+  color: #ffffffa3 !important;
+}
+
 
 /* CONTACT  */
 
@@ -373,11 +409,21 @@ button:focus {
     flex: 100%;
     max-width: 100%;
   }
+
+  .col-personal-works-grid {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /* WORKS GRID Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-works-grid {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .col-personal-works-grid {
     flex: 100%;
     max-width: 100%;
   }
@@ -394,9 +440,12 @@ button:focus {
     font-size: 1.6rem;
   }
 
-  .para {
-    font-size: 1.1rem;
+  #para-shrt-txt1 {
+    font-size: 1.4rem;
+
   }
+
+
 
 }
 

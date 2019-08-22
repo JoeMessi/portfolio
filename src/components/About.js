@@ -7,7 +7,7 @@ const About = (props) => {
       <Row>
          <Col>
            <Jumbotron className="jumbos">
-             <h2 className="headings-works">About</h2>
+             <h2 id="about-heading" className="headings-works">About</h2>
            </Jumbotron>
          </Col>
        </Row>
@@ -24,14 +24,13 @@ const About = (props) => {
              <Col md className="col-works-luxus">
                 <Jumbotron id="jumbo-para-about" className="jumbos">
                   <p id="para-about">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Commodo sed egestas egestas fringilla phasellus. Dui faucibus in ornare
-                  quam viverra orci.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Commodo sed egestas egestas fringilla phasellus. Dui faucibus in ornare
-                  quam viverra orci.
+                     My name is Joe and I am a London-based JavaScript Developer.
+                     I started learning Web Development a few years ago now and I have
+                     a diverse set of skills ranging from design to development. I have
+                     a good eye for beautiful and clean design, but my one true love is
+                     JavaScript. I love JavaScript and everything that comes with it,
+                     from the client-side to the server-side of the language, my appreciation
+                     to Javascript keeps growing day by day.
                   </p>
                 </Jumbotron>
              </Col>
