@@ -206,6 +206,10 @@ button:focus {
   padding: 4rem 0 0 0;
 }
 
+#span-js-shrt {
+  display: none;
+}
+
 .text-skill-circle {
   font-weight: 500;
   font-size: 1.5rem;
@@ -479,6 +483,14 @@ button:focus {
   }
 
   #ooj {
+    display: none;
+  }
+
+  #span-js-shrt {
+    display: block;
+  }
+
+  #span-js-lng {
     display: none;
   }
 

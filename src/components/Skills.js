@@ -18,7 +18,10 @@ const Skills = () => {
 
              <Col><div id="skills-c1" className="skills-circles"><span className="text-skill-circle">HTTP</span></div></Col>
              <Col id="ooj"><div id="skills-c2" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">OOJ</span></div></Col>
-             <Col><div id="skills-c3" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">JavaScript</span></div></Col>
+             <Col><div id="skills-c3" className="skills-circles">
+               <span id="span-js-lng" className="text-skill-circle text-skill-circle-light">JavaScript</span>
+               <span id="span-js-shrt" className="text-skill-circle text-skill-circle-light">Js</span>
+             </div></Col>
              <Col><div id="skills-c4" className="skills-circles"><span className="text-skill-circle">jQuery</span></div></Col>
              <Col><div id="skills-c5" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">API</span></div></Col>
 
