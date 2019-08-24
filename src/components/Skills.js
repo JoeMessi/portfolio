@@ -6,7 +6,7 @@ const Skills = () => {
     <Container fluid className="container-grey-bg">
       <Row>
         <Col></Col>
-        <Col xs={10}>
+        <Col xs={12} md={10}>
           <Row>
              <Col>
                <Jumbotron id="jumbo-skills-heading" className="jumbos">
