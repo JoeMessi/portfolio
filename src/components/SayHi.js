@@ -18,31 +18,29 @@ const SayHi = (props) => {
         <Col></Col>
         <Col xs={10}>
 
-
-        <Form>
+        <Form action="https://formspree.io/joe91messina@gmail.com" method="POST">
           <Form.Row>
             <Form.Group as={Col} controlId="formGridFirstName">
-              <Form.Control type="text" placeholder="First Name" />
+              <Form.Control type="text" placeholder="First Name" name="first-name"/>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridLastName">
-              <Form.Control type="text" placeholder="Last Name" />
+              <Form.Control type="text" placeholder="Last Name" name="last-name"/>
             </Form.Group>
           </Form.Row>
 
           <Form.Group controlId="formGridEmail">
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" placeholder="Enter email" name="email"/>
           </Form.Group>
 
           <Form.Group controlId="formGridTextarea">
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control as="textarea" rows="3" name="message"/>
           </Form.Group>
 
           <Button variant="dark" type="submit">
             Submit
           </Button>
         </Form>
-
 
         </Col>
         <Col></Col>
