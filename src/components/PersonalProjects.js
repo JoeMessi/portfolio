@@ -5,8 +5,11 @@ import projects from '../data';
 
 const PersonalProjects = (props) => {
 
+  // only personal projects from project data
+  const personalData = projects.slice(6);
+
   // mapping each work into column cards
-  const cards = projects.personal.map((project, index) =>
+  const cards = personalData.map((project, index) =>
      <Col md className="col-personal-works-grid" key={project.id}>
         <a href={`/projects/${project.id}`}>
           <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}${project.image_urls[0]})`}} className="jumbo-works">

@@ -1,7 +1,6 @@
 
-  const projects = {
+  const projects = [
 
-    treehouse: [
       {
         id:0,
         project_name: "Quote generator",
@@ -62,7 +61,6 @@
                       "/images/public_api_request_2.png",
                       "/images/public_api_request_3.png"]
       },
-
       {
         id:5,
         project_name: "Quote generator",
@@ -74,66 +72,53 @@
                       "/images/a_random_quote_generator_1.png",
                       "/images/a_random_quote_generator_2.png",
                       "/images/a_random_quote_generator_3.png"]
-      }
-    ],
+      },
 
 
+// PERSONAL REACT PROJECTS
 
-
-
-
-
-    personal: [
       {
-        id:0,
+        id:6,
         project_name: "To do list",
-        description: "A webpage that displays a 'To do list'.",
-        technologies: ["HTML","CSS","JavaScript"],
-        live_link: "https://joemessi.github.io/a_random_quote_generator/",
-        github_link :"https://github.com/JoeMessi/a_random_quote_generator",
+        description: "A webpage that displays a To Do List.",
+        technologies: ["JavaScript", "React", "HTML", "CSS"],
+        live_link: "https://joemessy-to-do-list.netlify.com/",
+        github_link :"https://github.com/JoeMessi/to-do-list",
         image_urls: [ "/images/to-do-list.png",
-                      "/images/a_random_quote_generator_1.png",
-                      "/images/a_random_quote_generator_2.png",
-                      "/images/a_random_quote_generator_3.png"]
+                      "/images/to-do-list-1.png",]
       },
       {
-        id:1,
+        id:7,
         project_name: "Shopping cart",
-        description: "A simple shopping cart.",
-        technologies: ["HTML","CSS","JavaScript"],
-        live_link: "https://joemessi.github.io/list_pagination_and_filtering/",
-        github_link: "https://github.com/JoeMessi/list_pagination_and_filtering",
+        description: "A simple Shopping Cart website.",
+        technologies: ["JavaScript", "React", "HTML", "CSS"],
+        live_link: "https://joemessy-shopping-cart.netlify.com/",
+        github_link: "https://github.com/JoeMessi/shopping-cart",
         image_urls: ["/images/shopping-cart.png",
-                      "/images/list_pagination_and_filtering_1.png",
-                      "/images/list_pagination_and_filtering_2.png",
-                      "/images/list_pagination_and_filtering_3.png"]
+                      "/images/shopping-cart-1.png",]
       },
       {
-        id:2,
+        id:8,
         project_name: "Calculator",
-        description: "Calculator",
-        technologies: ["HTML","CSS","JavaScript","jQuery"],
-        live_link: "https://joemessi.github.io/interactive-form/",
-        github_link: "https://github.com/JoeMessi/interactive-form",
+        description: "A webpage that displays a calculator",
+        technologies: ["JavaScript", "React", "HTML", "CSS"],
+        live_link: "https://joemessy-calculator.netlify.com/",
+        github_link: "https://github.com/JoeMessi/calculator",
         image_urls: ["/images/calculator.png",
-                      "/images/interactive_form_1.png",
-                      "/images/interactive_form_2.png",
-                      "/images/interactive_form_3.png"]
+                      "/images/calculator-1.png",]
       },
       {
-        id:3,
+        id:9,
         project_name: "Tic Tac Toe",
-        description: "Tic Tac Toe",
-        technologies: ["HTML","CSS","JavaScript","OOP"],
-        live_link: "https://joemessi.github.io/oop_game/",
-        github_link: "https://github.com/JoeMessi/oop_game",
+        description: "A webpage that displays the famous Tic Tac Toe game.",
+        technologies: ["JavaScript", "React", "HTML", "CSS"],
+        live_link: "https://joemessy-tic-tac-toe.netlify.com/",
+        github_link: "https://github.com/JoeMessi/tic-tac-toe",
         image_urls: ["/images/tic-tac-toe.png",
-                      "/images/oop_game_1.png",
-                      "/images/oop_game_2.png",
-                      "/images/oop_game_3.png"]
+                      "/images/tic-tac-toe-1.png",]
       }
-    ]
-  }
+    ];
+
 
 
 

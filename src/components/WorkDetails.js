@@ -15,21 +15,21 @@ export default class WorkDetails extends Component {
 
    render() {
 
-
      // projects data
-      const projects = this.props.data;
+     const projects = this.props.data;
      // project id
-      const projectId = this.props.match.params.id;
+     const projectId = this.props.match.params.id;
      // single project
-      const project = projects.treehouse[projectId];
+     const project = projects[projectId];
 
-
-
-
-
-
-
-
+     // image rows
+     const RowImages = project.image_urls.slice(1).map(url =>
+       <Row className="rows-screenshots-works">
+         <Col></Col>
+         <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${url}`} fluid/></Col>
+         <Col></Col>
+       </Row>
+     )
 
      return (
       <div>
@@ -42,7 +42,7 @@ export default class WorkDetails extends Component {
             <Col></Col>
               <Col xs={12} sm={12} md={7} lg={7}>
                 <Jumbotron fluid className="jumbos-hero-work-details">
-                <Button href="/#anchor-student" variant="outline-dark" size="sm">Back</Button>
+                <Button href={projectId > 5 ? "/#container-works-gallery-student" : "/#anchor-student" } variant="outline-dark" size="sm">Back</Button>
                   <h2>{project.project_name}</h2>
                   <p>{project.description}</p>
                 </Jumbotron>
@@ -54,28 +54,31 @@ export default class WorkDetails extends Component {
                   <ul id="ul-technologies">
                     {project.technologies.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
-                  <Button variant="dark" block>Live Demo</Button>
-                  <Button variant="dark" block>GitHub Repo</Button>
+                  <Button variant="dark" block href={project.live_link} target="_blank" rel="noopener noreferrer">Live Demo</Button>
+                  <Button variant="dark" block href={project.github_link} target="_blank" rel="noopener noreferrer">GitHub Repo</Button>
                 </Jumbotron>
               </Col>
               <Col></Col>
           </Row>
 
-          <Row className="rows-screenshots-works">
-            <Col></Col>
-            <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[1]}`} fluid/></Col>
-            <Col></Col>
-          </Row>
-          <Row className="rows-screenshots-works">
-            <Col></Col>
-            <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[2]}`} fluid/></Col>
-            <Col></Col>
-          </Row>
-          <Row className="rows-screenshots-works">
-            <Col></Col>
-            <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[3]}`} fluid/></Col>
-            <Col></Col>
-          </Row>
+             {RowImages}
+{/*
+  <Row className="rows-screenshots-works">
+    <Col></Col>
+    <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[1]}`} fluid/></Col>
+    <Col></Col>
+  </Row>
+  <Row className="rows-screenshots-works">
+    <Col></Col>
+    <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[2]}`} fluid/></Col>
+    <Col></Col>
+  </Row>
+  <Row className="rows-screenshots-works">
+    <Col></Col>
+    <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[3]}`} fluid/></Col>
+    <Col></Col>
+  </Row>
+  */}
         </Container>
             :
             <Container fluid id="container-error-msg">

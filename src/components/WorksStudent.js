@@ -5,8 +5,11 @@ import projects from '../data';
 
 const WorksStudent = (props) => {
 
+  // only treehouse projects from project data
+  const treehouseData = projects.slice(0, 6);
+
   // mapping each work into column cards
-  const cards = projects.treehouse.map((project, index) =>
+  const cards = treehouseData.map((project, index) =>
      <Col md className="col-works-grid" key={project.id}>
         <a href={`/projects/${project.id}`}>
           <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}${project.image_urls[0]})`}} className="jumbo-works">

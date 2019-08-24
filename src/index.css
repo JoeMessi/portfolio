@@ -140,13 +140,12 @@ button:focus {
   height: auto;
   border-radius: 50%;
   position: relative;
-  border: 1px solid #0000002e;
+  border: 1px solid #343a40;
 }
 
 #skills-c1 {
   width: 90%;
   padding-top: 90%;
-  background: #343a40;
 }
 
 #skills-c2 {
@@ -164,7 +163,6 @@ button:focus {
 #skills-c4 {
   width: 70%;
   padding-top: 70%;
-  background: #343a40;
 }
 
 #skills-c5 {
@@ -182,7 +180,6 @@ button:focus {
 #skills-c7 {
   width: 85%;
   padding-top: 85%;
-  background: #343a40;
 }
 
 #skills-c8 {
@@ -194,7 +191,6 @@ button:focus {
 #skills-c9 {
   width: 70%;
   padding-top: 70%;
-  background: #343a40;
 }
 
 #skills-row-1 {
@@ -211,7 +207,6 @@ button:focus {
 }
 
 .text-skill-circle {
-  color: white;
   font-weight: 500;
   font-size: 1.5rem;
   position: absolute;
@@ -219,6 +214,10 @@ button:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text-skill-circle-light {
+  color: white;
 }
 
 .jumbo-works {
