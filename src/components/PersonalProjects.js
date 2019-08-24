@@ -17,17 +17,21 @@ const PersonalProjects = (props) => {
   );
 
   return (
-    <Container fluid id="container-works-gallery-student" ref={props.studentRef}>
-      <Row className="padding-row-works">
+    <Container fluid id="container-works-gallery-student" className="container-dark" ref={props.studentRef}>
+      <Row className="padding-row-works" id="row-react">
         <Col></Col>
         <Col xs={10}>
           <Row>
-            <Col>
-              <Jumbotron className="jumbos">
-                <h2 className="headings-works">My personal React projects</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <Col></Col>
+            <Col xs={12} sm={12} lg={8}>
+              <Jumbotron className="jumbos" id="jumbo-react">
+                <h2 className="headings-works" id="heading-react">Me and React</h2>
+                <p>
+                  I love JavaScript and everything that comes with it, especially React.
+                  These are some of my personal projects I built using this powerful library.</p>
               </Jumbotron>
             </Col>
+            <Col></Col>
           </Row>
           <Row>
             {cards}

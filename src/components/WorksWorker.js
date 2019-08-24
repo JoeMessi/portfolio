@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
-import projects from '../data';
 
 
 const WorksWorker = (props) => {
 
 
   return (
-    <Container fluid ref={props.workerRef}>
+    <Container fluid id="anchor-worker" ref={props.workerRef}>
       <Row className="padding-row-works">
         <Col></Col>
         <Col xs={10}>
@@ -16,11 +15,11 @@ const WorksWorker = (props) => {
               <Jumbotron className="jumbos">
                 <h2 className="headings-works">As a worker</h2>
                 <p>
-                I've worked for 2 years at a digital marketing company called Luxus.
-                My main job was to create web pages using the famous content management system
-                developed by Adobe: "Adobe Experience Manager" or AEM.
-                The latest project I worked on at Luxus before I left was the development of the new
-                site for Amadeus, have a look at two of the many pages I helped creating using AEM.
+                I've worked for 2 years at a digital marketing company called <a href="https://www.luxusworldwide.com/" target="_blank" rel="noopener noreferrer">Luxus</a>.
+                My main job was to create web pages using Adobe's content management system.
+                One of the latest project I worked on was the development of the new
+                site for the travel technology company <a href="https://amadeus.com/en" target="_blank" rel="noopener noreferrer">Amadeus</a>.
+                The following are two of the many pages I helped creating using Adobe Experience Manager.
                 </p>
               </Jumbotron>
             </Col>
@@ -32,14 +31,14 @@ const WorksWorker = (props) => {
             <Col xs={12} sm={10}>
               <Row>
                 <Col md className="col-works-luxus">
-                   <a href="#">
+                   <a href="https://amadeus.com/en/portfolio/airlines/farexpert-filing-platform" target="_blank" rel="noopener noreferrer">
                      <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/amadeus.png`}} className="jumbo-works">
                        <h5 className="text-jumbo-works">View page</h5>
                      </Jumbotron>
                    </a>
                 </Col>
                 <Col md className="col-works-luxus">
-                   <a href="#">
+                   <a href="https://amadeus.com/en/insights/blog/customers-living-growing-live-travel-space" target="_blank" rel="noopener noreferrer">
                      <Jumbotron style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/amadeus2.png`}} className="jumbo-works">
                        <h5 className="text-jumbo-works">View page</h5>
                      </Jumbotron>

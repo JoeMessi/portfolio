@@ -15,32 +15,44 @@ export default class NavBar extends Component {
     this.setState({ navExpanded: false });
   }
 
+  // func that returns Nav.Items
+  // I alternate the use of href and onClick depending on if WorkDetails component is mounted,
+  // this so we use the scrolling func only when we actually can, which is only in '/'.
+  makeNavItems = (anchor, Ref, text) => {
+    return (
+      <Nav.Item>
+        <Nav.Link
+          onSelect={this.closeNav}
+          href={this.props.isWorkDetailsCompMounted ? anchor : null}
+          onClick={this.props.isWorkDetailsCompMounted ? null : () => { this.props.scrollTo(Ref.current)}}
+          eventKey="link-1">{text}
+        </Nav.Link>
+      </Nav.Item>
+    );
+  }
+
    render() {
      return (
-     <Navbar onToggle={this.setNavExpanded}
-             expanded={this.state.navExpanded} id="nav" expand="lg" fixed="top">
+      <Navbar
+        onToggle={this.setNavExpanded}
+        expanded={this.state.navExpanded} id="nav" expand="lg" fixed="top">
 
-       <Navbar.Brand onClick={() => {this.props.scrollTo(this.props.jRef.current); this.closeNav();}}>J</Navbar.Brand>
-       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-       <Navbar.Collapse ref={this.props.toggleRef} id="basic-navbar-nav">
-         <Nav className="mr-auto">
-           <Nav.Item>
-             <Nav.Link onSelect={this.closeNav} onClick={() => {this.props.scrollTo(this.props.studentRef.current)}} eventKey="link-1">As a student</Nav.Link>
-           </Nav.Item>
-           <Nav.Item>
-             <Nav.Link onSelect={this.closeNav} onClick={() => {this.props.scrollTo(this.props.workerRef.current)}} eventKey="link-1">As a worker</Nav.Link>
-           </Nav.Item>
-           <Nav.Item>
-             <Nav.Link onSelect={this.closeNav} onClick={() => {this.props.scrollTo(this.props.aboutRef.current)}} eventKey="link-2">About me</Nav.Link>
-           </Nav.Item>
-           <Nav.Item>
-             <Nav.Link onSelect={this.closeNav} onClick={() => {this.props.scrollTo(this.props.sayHiRef.current)}} eventKey="link-3">Say hi</Nav.Link>
-           </Nav.Item>
-         </Nav>
-       </Navbar.Collapse>
-   </Navbar>
+         <Navbar.Brand
+           href={this.props.isWorkDetailsCompMounted ? '/#anchor-home' : null}
+           onClick={this.props.isWorkDetailsCompMounted ? null : () => { this.props.scrollTo(this.props.jRef.current); this.closeNav(); }}>J
+         </Navbar.Brand>
+
+         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+         <Navbar.Collapse ref={this.props.toggleRef} id="basic-navbar-nav">
+           <Nav className="mr-auto">
+             {this.makeNavItems("/#anchor-student", this.props.studentRef, "As a student")}
+             {this.makeNavItems("/#anchor-worker", this.props.workerRef, "As a worker")}
+             {this.makeNavItems("/#anchor-about", this.props.aboutRef, "About me")}
+             {this.makeNavItems("/#anchor-say-hi", this.props.sayHiRef, "Say hi")}
+           </Nav>
+         </Navbar.Collapse>
+       </Navbar>
      );
    }
-
 
 }

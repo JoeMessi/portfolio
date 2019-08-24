@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Row, Col, Jumbotron, Image } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
 
 const About = (props) => {
   return (
-    <Container fluid className="container-dark" ref={props.aboutRef}>
+    <Container fluid className="container-dark" id="anchor-about" ref={props.aboutRef}>
       <Row>
          <Col>
            <Jumbotron className="jumbos">

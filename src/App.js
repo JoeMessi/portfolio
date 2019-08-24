@@ -19,13 +19,18 @@ export default class App extends Component {
 
   constructor(props) {
     super(props)
-
+    // Refs for anchor links
     this.jRef = React.createRef();
     this.studentRef = React.createRef();
     this.workerRef = React.createRef();
     this.aboutRef = React.createRef();
     this.sayHiRef = React.createRef();
 
+    // initial App state
+    this.state = {
+      // is WorkDetails component mounted ? (this will help functionality for the navigation)
+      isWorkDetailsCompMounted: null
+    }
   }
 
   // anchor scrolling helper func
@@ -37,16 +42,19 @@ export default class App extends Component {
     });
   }
 
-
-// document.getElementById("button").addEventListener('click', () => {
-//   scrollTo(document.getElementById("8"));
-// });
+  // func that will setState on workDetailsComponent
+  handleWorkDetailsCompState = (isShowing) => {
+    this.setState({
+      isWorkDetailsCompMounted: isShowing
+    })
+  }
 
 
   render() {
     return (
           <div>
             <NavBar
+              isWorkDetailsCompMounted={this.state.isWorkDetailsCompMounted}
               scrollTo={this.scrollTo}
               jRef={this.jRef}
               studentRef={this.studentRef}
@@ -57,17 +65,17 @@ export default class App extends Component {
             <Route exact path="/" render={() =>
               <div>
                 <Header scrollTo={this.scrollTo} jRef={this.jRef}/>
-                <ShortText />
+                {/*<ShortText />*/}
                 <WorksStudent studentRef={this.studentRef} />
                 <WorksWorker workerRef={this.workerRef} />
-                <AnotherShortText />
+                {/*<AnotherShortText />*/}
                 <PersonalProjects />
                 <Skills />
                 <About aboutRef={this.aboutRef} />
                 <SayHi sayHiRef={this.sayHiRef} />
               </div>
             }/>
-            <Route path="/projects/:id" render={({match})=> <WorkDetails  data={projects} match={match}/>
+            <Route path="/projects/:id" render={({match})=> <WorkDetails handleWorkDetailsCompState={this.handleWorkDetailsCompState}  data={projects} match={match}/>
             } />
           </div>
     );

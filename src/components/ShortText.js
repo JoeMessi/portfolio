@@ -11,7 +11,7 @@ const ShortText = () => {
           <Jumbotron fluid id="jumbo-shrt-txt1" className="jumbos">
             <Container>
               <p id="para-shrt-txt1">
-                 I love JavaScript and everything that comes with it. 
+                 I'm a Full Stack JavaScript Developer and this is my Portfolio.
               </p>
             </Container>
             </Jumbotron>

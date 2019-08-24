@@ -4,7 +4,7 @@ import { Container, Form, Button, Col, Row, Jumbotron } from 'react-bootstrap';
 
 const SayHi = (props) => {
   return (
-    <Container fluid ref={props.sayHiRef}>
+    <Container fluid id="anchor-say-hi" ref={props.sayHiRef}>
 
       <Row>
          <Col>
