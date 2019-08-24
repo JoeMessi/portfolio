@@ -472,6 +472,16 @@ button:focus {
 
   }
 
+  #skills-c1, #skills-c2, #skills-c3, #skills-c4,
+  #skills-c5, #skills-c6, #skills-c7, #skills-c8, #skills-c9 {
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  #ooj {
+    display: none;
+  }
+
 
 
 }
@@ -491,6 +501,11 @@ button:focus {
     font-size: 1.3rem;
   }
 
+  .text-skill-circle {
+    font-size: 0.9rem !important;
+  }
+
+
 }
 
 
@@ -503,6 +518,10 @@ button:focus {
 
   #col-bg-about {
     background-image: none !important;
+  }
+
+  .text-skill-circle {
+    font-size: 1.2rem;
   }
 
 
