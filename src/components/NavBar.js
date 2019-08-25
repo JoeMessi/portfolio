@@ -35,7 +35,7 @@ export default class NavBar extends Component {
      return (
       <Navbar
         onToggle={this.setNavExpanded}
-        expanded={this.state.navExpanded} id="nav" expand="lg" fixed="top">
+        expanded={this.state.navExpanded} id="nav" expand="" fixed="top">
 
          <Navbar.Brand
            href={this.props.isWorkDetailsCompMounted ? '/#anchor-home' : null}

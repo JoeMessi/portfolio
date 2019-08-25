@@ -43,10 +43,27 @@ button:focus {
 
 .header-bg {
   height: 100vh;
-  background: #343a40;
+  /* background: #343a40; */
   padding-top: 5rem;
   color: #ffffffbf;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.header-bg:before {
+  /* Pseudo element will only render if it has a content property */
+  content: '';
+  /* Overlay should occupy the full width and height of parent image container */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Overlay background-color */
+  background-color: #000000;
+  /* Overlay opacity, else overlay won't be transparent and show the image */
+  opacity: 0.6;
 }
 
 #nav {
@@ -97,7 +114,7 @@ button:focus {
 }
 
 #para-shrt-txt1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-style: italic;
   color: #343a40d9;
 }
@@ -437,7 +454,7 @@ button:focus {
 /* CONTACT  */
 
 #row-contact-form {
-  padding: 3.5rem 0;
+  padding: 3.5rem 0 8rem 0;
 }
 
 #jumbo-contact-heading {
@@ -510,10 +527,10 @@ button:focus {
     font-size: 1.6rem;
   }
 
-  #para-shrt-txt1 {
-    font-size: 1.4rem;
+  /* #para-shrt-txt1 {
+    font-size: 1.3rem;
 
-  }
+  } */
 
   /* #skills-c1, #skills-c2, #skills-c3, #skills-c4,
   #skills-c5, #skills-c6, #skills-c7, #skills-c8, #skills-c9 {
