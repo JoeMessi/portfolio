@@ -28,10 +28,3 @@ const Header = (props) => {
 }
 
 export default Header;
-
-
-// <Row>
-//   <Col>
-//    <Image src={joe} rounded />
-//   </Col>
-// </Row>

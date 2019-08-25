@@ -3,10 +3,8 @@ import { Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Header from './components/Header';
-import ShortText from './components/ShortText';
 import WorksStudent from './components/WorksStudent';
 import WorksWorker from './components/WorksWorker';
-import AnotherShortText from './components/AnotherShortText';
 import PersonalProjects from './components/PersonalProjects';
 import Skills from './components/Skills';
 import About from './components/About';
@@ -28,7 +26,7 @@ export default class App extends Component {
 
     // initial App state
     this.state = {
-      // is WorkDetails component mounted ? (this will help functionality for the navigation)
+      // is WorkDetails component mounted ? (helps functionality for the navigation when WorkDetails is mounted)
       isWorkDetailsCompMounted: null
     }
   }
@@ -52,7 +50,7 @@ export default class App extends Component {
 
   render() {
     return (
-          <div>
+         <>
             <NavBar
               isWorkDetailsCompMounted={this.state.isWorkDetailsCompMounted}
               scrollTo={this.scrollTo}
@@ -63,21 +61,23 @@ export default class App extends Component {
               sayHiRef={this.sayHiRef}
             />
             <Route exact path="/" render={() =>
-              <div>
+              <>
                 <Header scrollTo={this.scrollTo} jRef={this.jRef}/>
                 <About aboutRef={this.aboutRef} />
-                {/*<ShortText />*/}
                 <WorksStudent studentRef={this.studentRef} />
                 <WorksWorker workerRef={this.workerRef} />
-                {/*<AnotherShortText />*/}
                 <PersonalProjects />
                 <Skills />
                 <SayHi sayHiRef={this.sayHiRef} />
-              </div>
+              </>
             }/>
-            <Route path="/projects/:id" render={({match})=> <WorkDetails handleWorkDetailsCompState={this.handleWorkDetailsCompState}  data={projects} match={match}/>
+            <Route path="/projects/:id" render={({match})=>
+              <WorkDetails
+                handleWorkDetailsCompState={this.handleWorkDetailsCompState}
+                data={projects}
+                match={match}/>
             } />
-          </div>
+         </>
     );
   }
 

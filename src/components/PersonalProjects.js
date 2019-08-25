@@ -5,7 +5,7 @@ import projects from '../data';
 
 const PersonalProjects = (props) => {
 
-  // only personal projects from project data
+  // get only personal projects from project data
   const personalData = projects.slice(6);
 
   // mapping each work into column cards

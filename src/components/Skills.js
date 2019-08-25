@@ -16,39 +16,17 @@ const Skills = () => {
            </Row>
            <Row id="skills-row-1">
 
-           <Col className="cols-skills"><Image src={`${process.env.PUBLIC_URL}/images/js.png`}/></Col>
-           <Col className="cols-skills"><Image src={`${process.env.PUBLIC_URL}/images/react.png`}/></Col>
-           <Col className="cols-skills"><Image src={`${process.env.PUBLIC_URL}/images/node.png`}/></Col>
-           <Col className="cols-skills"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/express.png`}/></Col>
-           <Col className="cols-skills"><Image src={`${process.env.PUBLIC_URL}/images/jquery.png`}/></Col>
+           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/js.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/react.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/node.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/express.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://jquery.com/" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/jquery.png`}/></a></Col>
 
-
-{/*
-  <Col><div id="skills-c1" className="skills-circles"><span className="text-skill-circle">HTTP</span></div></Col>
-  <Col id="ooj"><div id="skills-c2" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">OOJ</span></div></Col>
-  <Col><div id="skills-c3" className="skills-circles">
-    <span id="span-js-lng" className="text-skill-circle text-skill-circle-light">JavaScript</span>
-    <span id="span-js-shrt" className="text-skill-circle text-skill-circle-light">Js</span>
-  </div></Col>
-  <Col><div id="skills-c4" className="skills-circles"><span className="text-skill-circle">jQuery</span></div></Col>
-  <Col><div id="skills-c5" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">API</span></div></Col>
-*/}
-
-
-
-        
-           <Col className="cols-skills"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/api.png`}/></Col>
-           <Col className="cols-skills"><Image id="react-boot-skills-img" src={`${process.env.PUBLIC_URL}/images/react-bootstrap.png`}/></Col>
-           <Col className="cols-skills"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/ajax.png`}/></Col>
-           <Col className="cols-skills"><Image src={`${process.env.PUBLIC_URL}/images/html.png`}/></Col>
-           <Col className="cols-skills"><Image src={`${process.env.PUBLIC_URL}/images/css.png`}/></Col>
-
-{/*
-  <Col><div id="skills-c6" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">Express</span></div></Col>
-  <Col><div id="skills-c7" className="skills-circles text-skill-circle-dark"><span className="text-skill-circle">React</span></div></Col>
-  <Col><div id="skills-c8" className="skills-circles"><span className="text-skill-circle text-skill-circle-light">Ajax</span></div></Col>
-  <Col><div id="skills-c9" className="skills-circles"><span className="text-skill-circle">Node.js</span></div></Col>
-*/}
+           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank" rel="noopener noreferrer"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/api.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://react-bootstrap.github.io/" target="_blank" rel="noopener noreferrer"><Image id="react-boot-skills-img" src={`${process.env.PUBLIC_URL}/images/react-bootstrap.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/Ajax_(programming)#targetText=Ajax%20(also%20AJAX%20%2F%CB%88e%C9%AA,to%20create%20asynchronous%20web%20applications." target="_blank" rel="noopener noreferrer"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/ajax.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/html.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/css.png`}/></a></Col>
 
            </Row>
         </Col>

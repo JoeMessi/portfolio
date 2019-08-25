@@ -4,7 +4,6 @@ import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
 
 const WorksWorker = (props) => {
 
-
   return (
     <Container fluid id="anchor-worker" ref={props.workerRef}>
       <Row className="padding-row-works">
@@ -27,7 +26,6 @@ const WorksWorker = (props) => {
 
           <Row>
             <Col></Col>
-
             <Col xs={12} sm={10}>
               <Row>
                 <Col md className="col-works-luxus">
@@ -46,7 +44,6 @@ const WorksWorker = (props) => {
                 </Col>
               </Row>
             </Col>
-
             <Col></Col>
           </Row>
 

@@ -82,6 +82,7 @@ button:focus {
 
 #nav span {
   color: #ffffffbf !important;
+  font-weight: bold;
 }
 
 #nav span:hover {
@@ -188,45 +189,6 @@ button:focus {
   height: 6rem;
   border-radius: 50%;
 }
-
-/* #skills-c3 {
-  width: 100%;
-  padding-top: 100%;
-  background: #343a40;
-}
-
-#skills-c4 {
-  width: 70%;
-  padding-top: 70%;
-}
-
-#skills-c5 {
-  width: 70%;
-  padding-top: 70%;
-  background: #343a40;
-}
-
-#skills-c6 {
-  width: 80%;
-  padding-top: 80%;
-  background: #343a40;
-}
-
-#skills-c7 {
-  width: 85%;
-  padding-top: 85%;
-}
-
-#skills-c8 {
-  width: 65%;
-  padding-top: 65%;
-  background: #343a40;
-}
-
-#skills-c9 {
-  width: 70%;
-  padding-top: 70%;
-} */
 
 #skills-row-1 {
   margin-top: 3rem;
@@ -532,17 +494,6 @@ button:focus {
   .jumbo-worker h1, .jumbo-student h1 {
     font-size: 1.6rem;
   }
-
-  /* #para-shrt-txt1 {
-    font-size: 1.3rem;
-
-  } */
-
-  /* #skills-c1, #skills-c2, #skills-c3, #skills-c4,
-  #skills-c5, #skills-c6, #skills-c7, #skills-c8, #skills-c9 {
-    width: 100%;
-    padding-top: 100%;
-  } */
 
   #ooj {
     display: none;
