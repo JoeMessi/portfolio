@@ -43,12 +43,12 @@ button:focus {
 
 .header-bg {
   height: 100vh;
-  /* background: #343a40; */
+  background: #343a40;
   padding-top: 5rem;
   color: #ffffffbf;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .header-bg:before {
@@ -88,8 +88,15 @@ button:focus {
   color: white !important;
 }
 
+.nav-item {
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
 
-
+#last-nav-item {
+  margin-bottom: 100vh;
+}
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
   color: white;
@@ -115,7 +122,6 @@ button:focus {
 
 #para-shrt-txt1 {
   font-size: 1.3rem;
-  font-style: italic;
   color: #343a40d9;
 }
 

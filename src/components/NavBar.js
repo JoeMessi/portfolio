@@ -18,9 +18,9 @@ export default class NavBar extends Component {
   // func that returns Nav.Items
   // I alternate the use of href and onClick depending on if WorkDetails component is mounted,
   // this so we use the scrolling func only when we actually can, which is only in '/'.
-  makeNavItems = (anchor, Ref, text) => {
+  makeNavItems = (anchor, Ref, text, lastNavItem = null) => {
     return (
-      <Nav.Item>
+      <Nav.Item id={lastNavItem}>
         <Nav.Link
           onSelect={this.closeNav}
           href={this.props.isWorkDetailsCompMounted ? anchor : null}
@@ -48,7 +48,7 @@ export default class NavBar extends Component {
              {this.makeNavItems("/#anchor-student", this.props.studentRef, "As a student")}
              {this.makeNavItems("/#anchor-worker", this.props.workerRef, "As a worker")}
              {this.makeNavItems("/#anchor-about", this.props.aboutRef, "About me")}
-             {this.makeNavItems("/#anchor-say-hi", this.props.sayHiRef, "Say hi")}
+             {this.makeNavItems("/#anchor-say-hi", this.props.sayHiRef, "Say hi", "last-nav-item")}
            </Nav>
          </Navbar.Collapse>
        </Navbar>
