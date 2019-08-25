@@ -97,7 +97,7 @@ button:focus {
 }
 
 #para-shrt-txt1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: #343a40d9;
 }
@@ -108,7 +108,7 @@ button:focus {
 }
 
 #jumbo-shrt-txt1 {
-  padding: 4.5rem 0 3rem 0;
+  padding: 0;
 }
 
 .col-works-grid {
@@ -143,18 +143,30 @@ button:focus {
   border: 1px solid #343a40;
 }
 
-#skills-c1 {
-  width: 90%;
-  padding-top: 90%;
+.skills-c1 {
+  width: 73%;
+  padding-top: 73%;
+  display: inline-block;
 }
 
-#skills-c2 {
-  width: 65%;
-  padding-top: 65%;
+.skills-c2 {
+  width: 73%;
+  padding-top: 73%;
+  display: inline-block;
   background: #343a40;
 }
 
-#skills-c3 {
+.skills-img {
+  width: 6.5rem;
+}
+
+#react-boot-skills-img {
+  width: 6.1rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+/* #skills-c3 {
   width: 100%;
   padding-top: 100%;
   background: #343a40;
@@ -191,11 +203,15 @@ button:focus {
 #skills-c9 {
   width: 70%;
   padding-top: 70%;
-}
+} */
 
 #skills-row-1 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+#skills-row-1 img {
+  margin-bottom: 2rem;
 }
 
 #skills-row-2 {
@@ -208,6 +224,13 @@ button:focus {
 
 #span-js-shrt {
   display: none;
+}
+
+.cols-skills {
+  text-align: center;
+  margin: auto;
+  flex: 20%;
+  max-width: 20%;
 }
 
 .text-skill-circle {
@@ -382,7 +405,11 @@ button:focus {
 }
 
 #about-heading {
-  color: #ffffffa3 !important;
+  padding: 4rem 0 0 0;
+}
+
+#anchor-about {
+  margin-bottom: 3rem;
 }
 
 
@@ -418,6 +445,11 @@ button:focus {
   margin: 0;
 }
 
+.validation-errs {
+  margin: 0;
+  color: #f99c0b;
+}
+
 
 
 
@@ -441,6 +473,8 @@ button:focus {
     flex: 50%;
     max-width: 50%;
   }
+
+
 }
 
 /* WORKS GRID Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -453,6 +487,11 @@ button:focus {
   .col-personal-works-grid {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .cols-skills {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
@@ -476,11 +515,11 @@ button:focus {
 
   }
 
-  #skills-c1, #skills-c2, #skills-c3, #skills-c4,
+  /* #skills-c1, #skills-c2, #skills-c3, #skills-c4,
   #skills-c5, #skills-c6, #skills-c7, #skills-c8, #skills-c9 {
     width: 100%;
     padding-top: 100%;
-  }
+  } */
 
   #ooj {
     display: none;

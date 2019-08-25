@@ -15,8 +15,8 @@ const Header = (props) => {
         <Col></Col>
         <Col xs={12} sm={12} md={10} lg={8} xl={6}>
           <Jumbotron fluid className="jumbos">
-            <h1 id="hero-greeting">Hi, I'm Joe, Nice to meet you :)</h1>
-            <h5 id="hero-text">I'm a JavaScript Developer and this is my Portfolio</h5>
+            <h1 id="hero-greeting">Joe Messina</h1>
+            <h5 id="hero-text">Full Stack JavaScript Developer</h5>
           </Jumbotron>
         </Col>
         <Col></Col>

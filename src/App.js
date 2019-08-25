@@ -65,13 +65,13 @@ export default class App extends Component {
             <Route exact path="/" render={() =>
               <div>
                 <Header scrollTo={this.scrollTo} jRef={this.jRef}/>
+                <About aboutRef={this.aboutRef} />
                 {/*<ShortText />*/}
                 <WorksStudent studentRef={this.studentRef} />
                 <WorksWorker workerRef={this.workerRef} />
                 {/*<AnotherShortText />*/}
                 <PersonalProjects />
                 <Skills />
-                <About aboutRef={this.aboutRef} />
                 <SayHi sayHiRef={this.sayHiRef} />
               </div>
             }/>
