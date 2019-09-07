@@ -14,11 +14,11 @@ const WorksWorker = (props) => {
               <Jumbotron className="jumbos">
                 <h2 className="headings-works">As a worker</h2>
                 <p>
-                I've worked for 2 years at a digital marketing company called <a href="https://www.luxusworldwide.com/" target="_blank" rel="noopener noreferrer">Luxus</a>.
-                My main job was to create web pages using Adobe's content management system.
-                One of the latest project I worked on was the development of the new
+                I have two years experience working at a digital marketing company called <a href="https://www.luxusworldwide.com/" target="_blank" rel="noopener noreferrer">Luxus</a>.
+                My key responsibility was to create web pages using Adobe's content management system.
+                One of the latest projects I worked on was the development of the new
                 site for the travel technology company <a href="https://amadeus.com/en" target="_blank" rel="noopener noreferrer">Amadeus</a>.
-                The following are two of the many pages I helped creating using Adobe Experience Manager.
+                The following are two examples of the many pages I helped to create using Adobe Experience Manager
                 </p>
               </Jumbotron>
             </Col>

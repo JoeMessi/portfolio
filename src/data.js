@@ -4,7 +4,7 @@
       {
         id:0,
         project_name: "Quote generator",
-        description: "A webpage that displays a famous random quote.",
+        description: "A webpage that displays a famous random quote",
         technologies: ["HTML","CSS","JavaScript"],
         live_link: "https://joemessi.github.io/a_random_quote_generator/",
         github_link :"https://github.com/JoeMessi/a_random_quote_generator",
@@ -16,7 +16,7 @@
       {
         id:1,
         project_name: "List pagination",
-        description: "A webpage that filters a list of students and provides pagination links. Each page displays 10 students, you can also filter by name using the search box on the top right corner of the page.",
+        description: "A webpage that filters a list of students and provides pagination links. Each page displays 10 students, you can also filter by name using the search box on the top right corner of the page",
         technologies: ["HTML","CSS","JavaScript"],
         live_link: "https://joemessi.github.io/list_pagination_and_filtering/",
         github_link: "https://github.com/JoeMessi/list_pagination_and_filtering",
@@ -52,7 +52,7 @@
       {
         id:4,
         project_name: "Public API request",
-        description: "An app for a fictional company called 'Awesome Startup'. It includes working with public APIs, making API requests, and asynchronously handling the data that is returned from the requests.",
+        description: "An app for a fictional company called 'Awesome Startup'. It includes working with public APIs, making API requests, and asynchronously handling the data that is returned from the requests",
         technologies: ["HTML","CSS","JavaScript","AJAX"],
         live_link: "https://joemessi.github.io/public_api_request/",
         github_link: "https://github.com/JoeMessi/public_api_request",
@@ -77,7 +77,7 @@
       {
         id:6,
         project_name: "SQL library manager",
-        description: "A web application for listing, adding, updating, and deleting books in a library application. Download the GitHub repo and follow the instructions in the README file to view the project.",
+        description: "A web application for listing, adding, updating, and deleting books in a library application. Download the GitHub repo and follow the instructions in the README file to view the project",
         technologies: ["JavaScript", "Node.js", "Express", "Pug", "Sequelize"],
         live_link: "",
         github_link :"https://github.com/JoeMessi/sql_library_manager",
@@ -90,7 +90,7 @@
       {
         id:7,
         project_name: "React and a REST API App",
-        description: "A full stack JavaScript application that allow users to view a list of courses and the detail for a specific course, sign up to create an account or sign in with an existing account, and create, update, or delete courses. Download the GitHub repo and follow the instructions in the README file to view the project.",
+        description: "A full stack JavaScript application that allow users to view a list of courses and the detail for a specific course, sign up to create an account or sign in with an existing account, and create, update, or delete courses. Download the GitHub repo and follow the instructions in the README file to view the project",
         technologies: ["React", "JavaScript", "Node.js", "Express", "Sequelize"],
         live_link: "",
         github_link :"https://github.com/JoeMessi/full_stack_app_with_react_and_a_rest_api",
@@ -106,7 +106,7 @@
       {
         id:8,
         project_name: "To do list",
-        description: "A webpage that displays a To Do List.",
+        description: "A webpage that displays a To Do List",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-to-do-list.netlify.com/",
         github_link :"https://github.com/JoeMessi/to-do-list",
@@ -116,7 +116,7 @@
       {
         id:9,
         project_name: "Shopping cart",
-        description: "A simple Shopping Cart website.",
+        description: "A simple Shopping Cart website",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-shopping-cart.netlify.com/",
         github_link: "https://github.com/JoeMessi/shopping-cart",
@@ -136,7 +136,7 @@
       {
         id:11,
         project_name: "Tic Tac Toe",
-        description: "A webpage that displays the famous Tic Tac Toe game.",
+        description: "A webpage that displays the famous Tic Tac Toe game",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-tic-tac-toe.netlify.com/",
         github_link: "https://github.com/JoeMessi/tic-tac-toe",

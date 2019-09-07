@@ -19,12 +19,12 @@ const About = (props) => {
           <Jumbotron fluid id="jumbo-shrt-txt1" className="jumbos">
               <p id="para-shrt-txt1">
                  My name is Joe and I am a London-based JavaScript Developer.
-                 I started learning Web Development a few years ago now and I have
+                 I started learning Web Development a few years ago and I have
                  a diverse set of skills ranging from design to development. I have
                  a good eye for beautiful and clean design, but my one true love is
                  JavaScript. I love JavaScript and everything that comes with it,
                  from the client-side to the server-side of the language, my appreciation
-                 to Javascript keeps growing day by day
+                 for Javascript keeps growing day by day
               </p>
             </Jumbotron>
         </Col>

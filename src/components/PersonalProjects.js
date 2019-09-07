@@ -31,7 +31,7 @@ const PersonalProjects = (props) => {
                 <h2 className="headings-works" id="heading-react">Me and React</h2>
                 <p>
                   I love JavaScript and everything that comes with it, especially React.
-                  These are some of my personal projects I built using this powerful library.</p>
+                  These are some of the personal projects I have built using this powerful library</p>
               </Jumbotron>
             </Col>
             <Col></Col>
