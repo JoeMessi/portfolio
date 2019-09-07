@@ -51,20 +51,19 @@ button:focus {
   background-size: cover; */
 }
 
+/*
+DARK OVERLAY IN CASE OF BG IMG
 .header-bg:before {
-  /* Pseudo element will only render if it has a content property */
   content: '';
-  /* Overlay should occupy the full width and height of parent image container */
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  /* Overlay background-color */
   background-color: #000000;
-  /* Overlay opacity, else overlay won't be transparent and show the image */
   opacity: 0.6;
 }
+*/
 
 #nav {
   background-color: #2b3034;

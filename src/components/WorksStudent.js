@@ -6,7 +6,7 @@ import projects from '../data';
 const WorksStudent = (props) => {
 
   // get only treehouse projects from project data
-  const treehouseData = projects.slice(0, 6);
+  const treehouseData = projects.slice(0, 8);
 
   // mapping each work into column cards
   const cards = treehouseData.map((project, index) =>

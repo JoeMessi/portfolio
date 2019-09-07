@@ -23,8 +23,8 @@ export default class WorkDetails extends Component {
      const project = projects[projectId];
 
      // image rows
-     const RowImages = project.image_urls.slice(1).map(url =>
-       <Row className="rows-screenshots-works">
+     const RowImages = project.image_urls.slice(1).map((url, index) =>
+       <Row key={index} className="rows-screenshots-works">
          <Col></Col>
          <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${url}`} fluid/></Col>
          <Col></Col>
@@ -42,7 +42,7 @@ export default class WorkDetails extends Component {
             <Col></Col>
               <Col xs={12} sm={12} md={7} lg={7}>
                 <Jumbotron fluid className="jumbos-hero-work-details">
-                <Button href={projectId > 5 ? "/#container-works-gallery-student" : "/#anchor-student" } variant="outline-dark" size="sm">Back</Button>
+                <Button href={projectId > 7 ? "/#container-works-gallery-student" : "/#anchor-student" } variant="outline-dark" size="sm">Back</Button>
                   <h2>{project.project_name}</h2>
                   <p>{project.description}</p>
                 </Jumbotron>
@@ -54,7 +54,11 @@ export default class WorkDetails extends Component {
                   <ul id="ul-technologies">
                     {project.technologies.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
-                  <Button variant="dark" block href={project.live_link} target="_blank" rel="noopener noreferrer">Live Demo</Button>
+                  {
+                    projectId == 6 || projectId == 7 ? null :
+                      <Button variant="dark" block href={project.live_link} target="_blank" rel="noopener noreferrer">Live Demo</Button>
+
+                  }
                   <Button variant="dark" block href={project.github_link} target="_blank" rel="noopener noreferrer">GitHub Repo</Button>
                 </Jumbotron>
               </Col>

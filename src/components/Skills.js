@@ -24,7 +24,7 @@ const Skills = () => {
 
            <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank" rel="noopener noreferrer"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/api.png`}/></a></Col>
            <Col className="cols-skills"><a href="https://react-bootstrap.github.io/" target="_blank" rel="noopener noreferrer"><Image id="react-boot-skills-img" src={`${process.env.PUBLIC_URL}/images/react-bootstrap.png`}/></a></Col>
-           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/Ajax_(programming)#targetText=Ajax%20(also%20AJAX%20%2F%CB%88e%C9%AA,to%20create%20asynchronous%20web%20applications." target="_blank" rel="noopener noreferrer"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/ajax.png`}/></a></Col>
+           <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noopener noreferrer"><Image className="skills-img" src={`${process.env.PUBLIC_URL}/images/sql.png`}/></a></Col>
            <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/html.png`}/></a></Col>
            <Col className="cols-skills"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener noreferrer"><Image src={`${process.env.PUBLIC_URL}/images/css.png`}/></a></Col>
 
