@@ -106,7 +106,7 @@
       {
         id:8,
         project_name: "To do list",
-        description: "A webpage that displays a To Do List",
+        description: "A webpage that displays a To do list that allow users to add, delete and check items in the list",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-to-do-list.netlify.com/",
         github_link :"https://github.com/JoeMessi/to-do-list",
@@ -116,7 +116,7 @@
       {
         id:9,
         project_name: "Shopping cart",
-        description: "A simple Shopping Cart website",
+        description: "A simple Shopping cart website that allow users to add and delete items from the cart",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-shopping-cart.netlify.com/",
         github_link: "https://github.com/JoeMessi/shopping-cart",
@@ -126,7 +126,7 @@
       {
         id:10,
         project_name: "Calculator",
-        description: "A webpage that displays a calculator",
+        description: "A webpage that displays a Calculator",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-calculator.netlify.com/",
         github_link: "https://github.com/JoeMessi/calculator",
@@ -136,7 +136,7 @@
       {
         id:11,
         project_name: "Tic Tac Toe",
-        description: "A webpage that displays the famous Tic Tac Toe game",
+        description: "A webpage which displays a game of Tic Tac Toe",
         technologies: ["JavaScript", "React", "HTML", "CSS"],
         live_link: "https://joemessy-tic-tac-toe.netlify.com/",
         github_link: "https://github.com/JoeMessi/tic-tac-toe",
