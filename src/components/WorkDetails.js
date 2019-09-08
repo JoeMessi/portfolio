@@ -3,11 +3,11 @@ import { Container, Row, Col, Jumbotron, Button, Image } from 'react-bootstrap';
 
 export default class WorkDetails extends Component {
 
-
+    // setState in App -> WorkDetails component is mounted
     componentDidMount() {
       this.props.handleWorkDetailsCompState(true);
     }
-
+    // setState in App -> WorkDetails component is NOT mounted
     componentWillUnmount(){
       this.props.handleWorkDetailsCompState(false);
     }
@@ -21,15 +21,21 @@ export default class WorkDetails extends Component {
      const projectId = this.props.match.params.id;
      // single project
      const project = projects[projectId];
+      // image rows
+     let RowImages;
 
-     // image rows
-     const RowImages = project.image_urls.slice(1).map((url, index) =>
-       <Row key={index} className="rows-screenshots-works">
-         <Col></Col>
-         <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${url}`} fluid/></Col>
-         <Col></Col>
-       </Row>
-     )
+     if(project) {
+        RowImages = project.image_urls.slice(1).map((url, index) =>
+         <Row key={index} className="rows-screenshots-works">
+           <Col></Col>
+           <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${url}`} fluid/></Col>
+           <Col></Col>
+         </Row>
+       )
+     }else{
+        RowImages = null;
+     }
+
 
      return (
       <div>
@@ -54,10 +60,9 @@ export default class WorkDetails extends Component {
                   <ul id="ul-technologies">
                     {project.technologies.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
-                  {
+                  { /* project 6 and 7 don't have a live link */
                     projectId == 6 || projectId == 7 ? null :
                       <Button variant="dark" block href={project.live_link} target="_blank" rel="noopener noreferrer">Live Demo</Button>
-
                   }
                   <Button variant="dark" block href={project.github_link} target="_blank" rel="noopener noreferrer">GitHub Repo</Button>
                 </Jumbotron>
@@ -66,23 +71,7 @@ export default class WorkDetails extends Component {
           </Row>
 
              {RowImages}
-{/*
-  <Row className="rows-screenshots-works">
-    <Col></Col>
-    <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[1]}`} fluid/></Col>
-    <Col></Col>
-  </Row>
-  <Row className="rows-screenshots-works">
-    <Col></Col>
-    <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[2]}`} fluid/></Col>
-    <Col></Col>
-  </Row>
-  <Row className="rows-screenshots-works">
-    <Col></Col>
-    <Col xs={12} sm={12} md={10} className="col-screenshots-works"><Image src={`${process.env.PUBLIC_URL}${project.image_urls[3]}`} fluid/></Col>
-    <Col></Col>
-  </Row>
-  */}
+
         </Container>
             :
             <Container fluid id="container-error-msg">
@@ -108,7 +97,5 @@ export default class WorkDetails extends Component {
       </div>
      );
    }
-
-
 
 }

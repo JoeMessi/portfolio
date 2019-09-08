@@ -16,15 +16,15 @@ export default class NavBar extends Component {
   }
 
   // func that returns Nav.Items
-  // I alternate the use of href and onClick depending on if WorkDetails component is mounted,
+  // I alternate the use of href and onClick depending on if WorkDetails or NotFound components are mounted,
   // this so we use the scrolling func only when we actually can, which is only in '/'.
   makeNavItems = (anchor, Ref, text, lastNavItem = null) => {
     return (
       <Nav.Item id={lastNavItem}>
         <Nav.Link
           onSelect={this.closeNav}
-          href={this.props.isWorkDetailsCompMounted ? anchor : null}
-          onClick={this.props.isWorkDetailsCompMounted ? null : () => { this.props.scrollTo(Ref.current)}}
+          href={this.props.isWorkDetailsCompMounted || this.props.isNotFoundCompMounted ? anchor : null}
+          onClick={this.props.isWorkDetailsCompMounted || this.props.isNotFoundCompMounted ? null : () => { this.props.scrollTo(Ref.current)}}
           eventKey="link-1">{text}
         </Nav.Link>
       </Nav.Item>
