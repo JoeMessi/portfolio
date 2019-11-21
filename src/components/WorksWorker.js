@@ -15,7 +15,8 @@ const WorksWorker = (props) => {
                 <h2 className="headings-works">As a worker</h2>
                 <p>
                 I have two years experience working at a digital marketing company called <a href="https://www.luxusworldwide.com/" target="_blank" rel="noopener noreferrer">Luxus</a>.
-                My key responsibility was to create web pages using Adobe's content management system.
+                My key responsibilities were to create web pages using Adobe's content management system,
+                creating and updating javascript files and HTML emails.
                 One of the latest projects I worked on was the development of the new
                 site for the travel technology company <a href="https://amadeus.com/en" target="_blank" rel="noopener noreferrer">Amadeus</a>.
                 The following are two examples of the many pages I helped to create using Adobe Experience Manager
