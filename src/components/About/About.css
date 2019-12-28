@@ -1,0 +1,27 @@
+div#about-container {
+   display: grid;
+   grid-template-columns: 15% 70% 15%;
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 4rem;
+
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: var(--grayHeading);
+}
+
+p.para-sections {
+  font-size: 1.2rem;
+  color: var(--grayText);
+  line-height: 1.6;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  div#about-container {
+     grid-template-columns: 10% 80% 10%;
+  }
+}

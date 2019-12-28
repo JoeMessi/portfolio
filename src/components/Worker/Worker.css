@@ -1,0 +1,31 @@
+div#worker-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+div#center-col-worker {
+  text-align: center;
+}
+
+div#worker-text {
+  margin-bottom: 3.2rem;
+}
+
+div#project-worker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.1rem;
+  grid-row-gap: 2rem;
+}
+
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  div#project-worker {
+      grid-template-columns: 1fr;
+  }
+
+}

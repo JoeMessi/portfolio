@@ -1,0 +1,55 @@
+div#sayhi-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+div#center-col-sayhi {
+  text-align: center;
+}
+
+div#sayhi-text {
+  margin-bottom: 3.2rem;
+}
+
+input, div.form-group, textarea {
+  width: 100%;
+}
+
+div.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+}
+
+input, textarea {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: .30rem;
+  padding: .375rem .75rem;
+}
+
+div.form-group {
+  padding-top: 1.2rem;
+}
+
+button.red-btn {
+  padding: 0.5rem 3rem;
+  background: rgb(162,47,47);
+  background: linear-gradient(125deg, rgba(162,47,47,1) 4%, rgba(126,12,58,1) 89%);
+  color: var(--whiteColor);
+  border-radius: .30rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  input, textarea {
+    padding: 0.375rem 0.2rem 0rem 0.5rem;
+  }
+}

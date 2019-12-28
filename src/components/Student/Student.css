@@ -1,0 +1,83 @@
+div#student-container {
+    background: #f9f9f9;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+div#center-col-student {
+  text-align: center;
+}
+
+div#student-text {
+  margin-bottom: 3.2rem;
+}
+
+div#project-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2.1rem;
+    grid-row-gap: 2rem;
+}
+
+a.link-img-box {
+  position: relative;
+}
+
+div.overlay-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(162,47,47);
+  background: linear-gradient(125deg, rgba(162,47,47,1) 4%, rgba(126,12,58,1) 89%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.5s, opacity 0.5s ease;
+  transition: visibility 0.5s, opacity 0.5s ease;
+  border-radius: 0.4rem;
+  color: var(--whiteColor);
+}
+
+a.link-img-box:hover div.overlay-box {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+.student-gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 2px #00000047;
+}
+
+h4.h4-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+a.hyper-link {
+  color: #f99a00;
+  text-decoration: none;
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  div#project-gallery {
+      grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  div#project-gallery {
+      grid-template-columns: 1fr;
+  }
+}
