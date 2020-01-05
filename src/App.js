@@ -6,18 +6,27 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Student from './components/Student/Student';
 import Worker from './components/Worker/Worker';
-import MeReact from './components/MeReact/MeReact';
+import PersonalProjects from './components/PersonalProjects/PersonalProjects';
 import Skills from './components/Skills/Skills';
 import SayHi from './components/SayHi/SayHi';
 import ProjectPage from './components/ProjectPage/ProjectPage';
 
-import { projectsStudent, projectsPersonalReact } from './data.js';
+import {
+  projectsStudent,
+  projectsPersonalReact,
+  projectsPersonalVue,
+  projectsPersonalSocket } from './data.js';
 
 
 function App() {
 
   // all projects objs combined in one array
-  const data = [...projectsStudent, ...projectsPersonalReact];
+  const data = [
+      ...projectsStudent,
+      ...projectsPersonalReact,
+      ...projectsPersonalVue,
+      ...projectsPersonalSocket
+    ];
 
   return (
        <div id="container">
@@ -29,7 +38,7 @@ function App() {
                   <About />
                   <Student />
                   <Worker />
-                  <MeReact />
+                  <PersonalProjects />
                   <Skills />
                   <SayHi />
                 </>

@@ -147,3 +147,46 @@ export const projectsPersonalReact = [
                   "/images/tic-tac-toe-1.png",]
   }
 ];
+
+
+
+// PERSONAL VUE PROJECTS
+export const projectsPersonalVue = [
+  {
+    id:12,
+    project_name: "Vue Todo App",
+    description: "A webpage which displays a Todo list application built with Vue.js",
+    technologies: ["JavaScript", "Vue", "HTML", "CSS"],
+    live_link: "https://vue-todo-vuex-store.netlify.com/",
+    github_link: "https://github.com/JoeMessi/vue-to-do-vuex-storec",
+    image_urls: ["/images/vue-todo-main.png",
+                  "/images/vue-todo_1.png",]
+  },
+  {
+    id:13,
+    project_name: "Routing and more",
+    description: "Application that makes use of routing to display four different Vue projects",
+    technologies: ["JavaScript", "Vue", "HTML", "CSS"],
+    live_link: "https://vue-routing-and-more.netlify.com",
+    github_link: "https://github.com/JoeMessi/vue-routing-and-more",
+    image_urls: ["/images/vue-routing-main.png",
+                  "/images/vue-routing_1.png",]
+  }
+]
+
+
+
+
+// PERSONAL SOCKET.IO PROJECTS
+export const projectsPersonalSocket = [
+  {
+    id:14,
+    project_name: "Live Chat App",
+    description: "A real time chat application built with Socket.io, Node.js and Express",
+    technologies: ["JavaScript", "Node.js", "Express.js", "Socket.io", "HTML", "CSS"],
+    live_link: "https://client-side-chat-app.netlify.com/",
+    github_link: "https://github.com/JoeMessi/chatApp",
+    image_urls: ["/images/chat-app-main.png",
+                  "/images/chat-app_1.png",]
+  },
+]

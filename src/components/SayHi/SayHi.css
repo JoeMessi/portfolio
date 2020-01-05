@@ -39,12 +39,12 @@ div.form-group {
 
 button.red-btn {
   padding: 0.5rem 3rem;
-  background: rgb(162,47,47);
-  background: linear-gradient(125deg, rgba(162,47,47,1) 4%, rgba(126,12,58,1) 89%);
+  background: rgb(162, 47, 47);
   color: var(--whiteColor);
   border-radius: .30rem;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

@@ -51,11 +51,6 @@ div.container-project-page-img {
   margin-top: 1.3rem;
 }
 
-div#project-page-technologies button, div#project-page-text-tech-box button {
-  cursor: pointer;
-}
-
-
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {

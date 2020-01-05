@@ -1,0 +1,83 @@
+div#me-react-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  background: rgb(162,47,47);
+  background: linear-gradient(125deg, rgba(162,47,47,1) 4%, rgba(126,12,58,1) 89%);
+  color: var(--whiteColor) !important;
+}
+
+div#center-col-me-react {
+    text-align: center;
+}
+
+div#me-react-text {
+    margin-bottom: 3.2rem;
+}
+
+div#me-react-text h2, div#me-react-text p {
+   color: var(--whiteColor);
+}
+
+div.white-overlay h4 {
+  color: var(--grayHeading);
+}
+
+div#project-me-react {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2.1rem;
+  grid-row-gap: 2rem;
+}
+
+#btn-container-personal button {
+  width: 9rem;
+  margin-right: 0.7rem;
+  margin-bottom: 4rem;
+  background: var(--whiteColor);
+  color: var(--grayHeading);
+  border-radius: .30rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.active, #btn-container-personal button:hover {
+  background: #2fa2a2 !important;
+  color: var(--whiteColor) !important;
+}
+
+.azure-overlay {
+  background: #2fa2a2 !important;
+  color: var(--whiteColor);
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  div#project-me-react {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  div#project-me-react  {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  div#project-me-react  {
+      grid-template-columns: 1fr;
+  }
+
+  #btn-container-personal button {
+     width: 5rem;
+     padding: 0.5rem 0rem;
+  }
+}
