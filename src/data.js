@@ -158,7 +158,7 @@ export const projectsPersonalVue = [
     description: "A webpage which displays a Todo list application built with Vue.js",
     technologies: ["JavaScript", "Vue", "HTML", "CSS"],
     live_link: "https://vue-todo-vuex-store.netlify.com/",
-    github_link: "https://github.com/JoeMessi/vue-to-do-vuex-storec",
+    github_link: "https://github.com/JoeMessi/vue-to-do-vuex-store",
     image_urls: ["/images/vue-todo-main.png",
                   "/images/vue-todo_1.png",]
   },
